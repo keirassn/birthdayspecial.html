@@ -145,7 +145,7 @@
         <div class="controls">
           <div class="control">
             <label>Nama yang ulang tahun</label>
-            <input id="nameInput" type="text" placeholder="Misal: Keira" value="Bestie"/>
+            <input id="nameInput" type="text" placeholder="Misal: kirana" value="kirana"/>
           </div>
           <div class="control">
             <label>Ucapan singkat</label>
@@ -196,7 +196,7 @@
             </div>
           </div>
           <div class="title">
-            <h2>Happy Birthday, <span id="name">Bestie</span>! 🎂</h2>
+            <h2>Happy Birthday, <span id="name">kirana</span>! 🎂</h2>
             <p id="message">Semoga sehat, bahagia, dan semua mimpimu tercapai!</p>
           </div>
         </div>
@@ -237,7 +237,7 @@
     todayEl.textContent = `${fmt(now.getDate())}-${fmt(now.getMonth()+1)}-${now.getFullYear()}`;
 
     // Input bindings
-    nameInput.addEventListener('input', ()=> nameSpan.textContent = nameInput.value || 'Bestie');
+    nameInput.addEventListener('input', ()=> nameSpan.textContent = nameInput.value || 'kirana');
     msgInput.addEventListener('input', ()=> messageP.textContent = msgInput.value || 'Semoga sehat, bahagia, dan semua mimpimu tercapai!');
 
     // Emoji adders
@@ -277,7 +277,7 @@
 
     // Reset
     $('#btnReset').addEventListener('click', ()=>{
-      nameInput.value = 'Bestie';
+      nameInput.value = 'kirana';
       msgInput.value = 'Semoga sehat, bahagia, dan semua mimpimu tercapai!';
       colorAccent.value = '#f59e0b';
       colorBg1.value = '#0ea5e9';
@@ -290,7 +290,7 @@
           <div class="candle" style="left:104px"></div>
           <div class="candle" style="left:122px"></div>
         </div>`;
-      nameSpan.textContent = 'Bestie';
+      nameSpan.textContent = 'kirana';
       messageP.textContent = 'Semoga sehat, bahagia, dan semua mimpimu tercapai!';
       applyTheme();
     });
@@ -369,3 +369,4 @@
   </script>
 </body>
 </html>
+
