@@ -234,7 +234,7 @@
     // Date badge
     const now = new Date();
     const fmt = (n)=> n.toString().padStart(2,'0');
-    todayEl.textContent = `${fmt(now.getDate())}-${fmt(now.getMonth()+1)}-${now.getFullYear()}`;
+    todayEl.textContent = "18-01-2009";
 
     // Input bindings
     nameInput.addEventListener('input', ()=> nameSpan.textContent = nameInput.value || 'kirana');
@@ -369,4 +369,5 @@
   </script>
 </body>
 </html>
+
 
